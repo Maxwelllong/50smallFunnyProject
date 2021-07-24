@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+:root{
+    --main-border-fulfill:#3498db;
+    --main-border-empty:#e0e0e0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f7fb;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.progress-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+}
+.progress{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-border-empty);
+    margin-top:10px;
+    z-index:-1;
+    transition: .4s #3498db;
+    -webkit-transition: .4s #3498db;
+    -moz-transition: .4s #3498db;
+    -ms-transition: .4s #3498db;
+    -o-transition: .4s #3498db;
+}
+.progress .active{
+    background-color: var(--main-border-fulfill);
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border:2px solid #e0e0e0;
+    
+}
+.active{
+    border:2px solid #3498db;
+}
+
+/* 按钮区样式 */
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:220px;
+}
+.prev,
+.next{
+    border:none;
+    width: 100px;
+    height: 30px;
+    background-color: #3498db;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    
+}
+.prev:disabled{
+    transform: none;
+    cursor: not-allowed;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+.prev:active,
+.next:active{
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+    cursor: pointer;
+}
+.defaultStyle{
+    background-color: #e0e0e0;
+    cursor:not-allowed;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+
+
