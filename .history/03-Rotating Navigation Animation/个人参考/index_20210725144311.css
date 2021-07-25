@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: content-box;
+}
+.container{
+    transform-origin: left top;
+    transition: transform .5s linear ;
+    -webkit-transition: transform .5s linear ;
+    -moz-transition: transform .5s linear ;
+    -ms-transition: transform .5s linear ;
+    -o-transition: transform .5s linear ;
+    width: 100vw;
+    height: 100vh;
+    padding:50px;
+}
+.content .show-nav{
+    transform: rotate(-20deg) ;
+    -webkit-transform: rotate(-20deg) ;
+    -moz-transform: rotate(-20deg) ;
+    -ms-transform: rotate(-20deg) ;
+    -o-transform: rotate(-20deg) ;
+}
+.circle-container{
+    width: 200px;
+    height: 200px;
+    background-color: #ff7979;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position:fixed;
+    left:-100px;
+    top:-100px;
+    
+}
+.container-container.show-nav{
+    transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+}
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+}
+.circle{
+    position: absolute;
+    left:50%;
+    top:50%;
+}  
+.close,.open{
+    height:100px;
+    font-size: 20px;
+    border:none;
+    color:#fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+#close{
+    transform-origin: top left;
+    transform: rotate(70deg) ;
+    -webkit-transform: rotate(70deg) ;
+    -moz-transform: rotate(70deg) ;
+    -ms-transform: rotate(70deg) ;
+    -o-transform: rotate(70deg) ;
+}
+
+/* 主体内容区域 */
+
+.content{
+   margin:100px auto;
+   max-width: 1000px;
+}
+.content h2{
+    margin:25px 0;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.content i{
+    display: block;
+    margin:-20px 0 20px 0;
+    color:gray;
+    font-size: 10px;
+}
+.content span,p{
+    color:gray;
+    height:40px;
+}
+.content h3{
+    margin:20px 0;
+}
+.content img{
+    width: 100%;
+    margin-bottom:20px;
+}
+
+/* 隐藏按钮区域 */
+.nav{
+    transform-origin: left top;
+    position: fixed;
+    bottom:40px;
+    left:-300px;
+}
+.nav .active{
+    transform-origin: left top;
+    transform:rotate(-70deg);
+    -webkit-transform:rotate(-70deg);
+    -moz-transform:rotate(-70deg);
+    -ms-transform:rotate(-70deg);
+    -o-transform:rotate(-70deg);
+}
+.nav ul{
+    margin-left: 50px;
+}
+.nav ul li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 30px;
+}
+.nav ul li i{
+    font-size: 25px;
+    margin-right:10px;
+}
+.nav li:nth-child(2){
+    margin-left: 30px;
+}
+.nav li:nth-child(3){
+    margin-left: 50px;
+}

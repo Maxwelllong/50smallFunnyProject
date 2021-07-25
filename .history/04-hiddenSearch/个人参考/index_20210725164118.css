@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}  
+.search{
+    position: relative;
+}    
+.search input{
+    width: 200px;
+    height: 30px;
+    border:none;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    border:none;
+}

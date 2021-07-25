@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+}
+.container{
+
+}
+.circle-container{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 50%;;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close{
+    height: 100px;
+}

@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
+}
+.circle-container{
+    position:fixed;
+    width: 200px;
+    height: 200px;
+    background-color: #ff7979;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    -webkit-border-radius:50%;
+    position: relative;
+    left:-100px;
+    top:-100px;
+}
+.circle{
+    position: absolute;
+    left:50%;
+    top:50%;
+
+}
+.close{
+    height:100px;
+    transform-origin: top left;
+    font-size:20px;
+    border:none;
+    transform:  rotate(70deg) ;
+    -webkit-transform:  rotate(70deg) ;
+    -moz-transform:  rotate(70deg) ;
+    -ms-transform:  rotate(70deg) ;
+    -o-transform:  rotate(70deg) ;
+    background-color: transparent;
+    color:white;
+}
+.open{
+    height:100px;
+    font-size:20px;
+    border:none;
+    background-color: transparent;
+    color:white;
+}

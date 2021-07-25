@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: content-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+}
+.container{
+    background-color: #fafafa;
+    transform-origin: left top;
+    transition: transform .5s linear ;
+    -webkit-transition: transform .5s linear ;
+    -moz-transition: transform .5s linear ;
+    -ms-transition: transform .5s linear ;
+    -o-transition: transform .5s linear ;
+    width: 100vw;
+    height: 100vh;
+    padding:50px;
+}
+.content .show-nav{
+    transform: rotate(-30deg) ;
+    -webkit-transform: rotate(-30deg) ;
+    -moz-transform: rotate(-30deg) ;
+    -ms-transform: rotate(-30deg) ;
+    -o-transform: rotate(-30deg) ;
+}
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    
+}
+.circle{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+} 
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+  }
+.circle button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+} 
+.close,.open{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+.circle button#open{
+    left:60%;
+}
+.circle button#close{
+    transform-origin: top left;
+    transform: rotate(90deg) ;
+    -webkit-transform: rotate(90deg) ;
+    -moz-transform: rotate(90deg) ;
+    -ms-transform: rotate(90deg) ;
+    -o-transform: rotate(90deg) ;
+    top:60%;
+}
+
+/* 主体内容区域 */
+
+.content{
+   margin:100px auto;
+   max-width: 1000px;
+}
+.content h2{
+    margin:25px 0;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.content i{
+    display: block;
+    margin:-20px 0 20px 0;
+    color:gray;
+    font-size: 10px;
+}
+.content span,p{
+    color:gray;
+    height:40px;
+}
+.content h3{
+    margin:20px 0;
+}
+.content img{
+    width: 100%;
+    margin-bottom:20px;
+}
+
+/* 隐藏按钮区域 */
+.nav{
+    transform-origin: left top;
+    position: fixed;
+    bottom:40px;
+    left:-300px;
+}
+.nav .active{
+    transform-origin: left top;
+    transform:rotate(-70deg);
+    -webkit-transform:rotate(-70deg);
+    -moz-transform:rotate(-70deg);
+    -ms-transform:rotate(-70deg);
+    -o-transform:rotate(-70deg);
+}
+.nav ul{
+    margin-left: 50px;
+}
+.nav ul li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 30px;
+}
+.nav ul li i{
+    font-size: 25px;
+    margin-right:10px;
+}
+.nav li:nth-child(2){
+    margin-left: 30px;
+}
+.nav li:nth-child(3){
+    margin-left: 50px;
+}
