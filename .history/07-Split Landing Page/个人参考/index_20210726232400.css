@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #ccc;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.split{
+    position: absolute;
+    width: 50%;
+}
