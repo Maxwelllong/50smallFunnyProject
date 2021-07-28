@@ -1,0 +1,26 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
+}
+body{
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgba(0,0,0,.5);
+    padding:10px 20px;
+    color:#fff;
+    display: flex;
+}
+.text{
+    border:2px solid #fff;
+    padding:10px;
+}
+.key{
+    border:2px solid #fff;
+    padding:10px;
+}
