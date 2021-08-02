@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #f0f0f0;
+    position: relative;
+}
+.container{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%) rotate(deg) scale();
+    -webkit-transform: translateX(-50%) rotate(deg) scale();
+    -moz-transform: translateX(-50%) rotate(deg) scale();
+    -ms-transform: translateX(-50%) rotate(deg) scale();
+    -o-transform: translateX(-50%) rotate(deg) scale();
+}

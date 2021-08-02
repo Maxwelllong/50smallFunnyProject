@@ -1,0 +1,19 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(31, 118, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color:#fff;
+    font-size:20px;
+}
+.container{
+
+}
+#text{
+    resize: none;
+}
