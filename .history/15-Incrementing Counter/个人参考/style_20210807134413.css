@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    background-color: #8e44ad;
+    color: #fff;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.item{
+  /* background-color: aqua; */
+  margin-left:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.target{
+  font-size:30px;
+}
+
